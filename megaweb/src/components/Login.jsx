@@ -21,8 +21,8 @@ function Login() {
                     navigate("/")
                 }
             }
-        }catch(e){
-            setError(e.message)
+        }catch(error){
+            setError(error.message)
         }
     }
   return (
