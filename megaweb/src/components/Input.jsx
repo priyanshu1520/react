@@ -1,13 +1,10 @@
-import React from 'react'
-import React,{useId} from 'react'
-
-
-const Input=React.forwardRef(function Input({
+import React, {useId} from 'react'
+const Input=React.forwardRef( function Input({
     label,
     type="text",
-    className='',
+    className="",
     ...props
-},ref){
+}, ref){
     const id=useId()
     return (
         <div className='w-full'>
@@ -27,5 +24,4 @@ const Input=React.forwardRef(function Input({
         </div>
     )
 })
-
 export default Input
